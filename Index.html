@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Pied de Madame - Sandales Femmes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f4f4;
+            color: #333;
+        }
+        header {
+            background: #d46a7e;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        nav a {
+            text-decoration: none;
+            color: #d46a7e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1585386959984-a4155223f194?auto=format&q=80') center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 0 10px #000;
+            font-size: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        section {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        h2 {
+            color: #d46a7e;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card button {
+            background: #d46a7e;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+        .card button:hover {
+            background: #b65768;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        .contact-box {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn-send {
+            background: #d46a7e;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            color: white;
+            margin-top: 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+        .btn-send:hover {
+            background: #b65768;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Le Pied de Madame</h1>
+    <p>Sandales élégantes pour femmes modernes</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="accueil">
+    Découvrez l’élégance à vos pieds ✨
+</div>
+
+<section id="boutique">
+    <h2>🛍 Boutique</h2>
+    <p>Nos sandales sont conçues pour allier confort, beauté et qualité.</p>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8cfa9?auto=format&q=80" alt="Sandale modèle 1">
+            <h3>Sandales Émeraude</h3>
+            <p>39,90 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600181953987-6d9a7c6ee83f?auto=format&q=80" alt="Sandale modèle 2">
+            <h3>Sandales Perla</h3>
+            <p>34,90 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503341733017-1901578f9de8?auto=format&q=80" alt="Sandale modèle 3">
+            <h3>Sandales Rose Gold</h3>
+            <p>44,90 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+    </div>
+</section>
+
+<section id="apropos">
+    <h2>💖 À propos</h2>
+    <p>
+        Le Pied de Madame est une boutique spécialisée dans les sandales féminines tendance.  
+        Nous sélectionnons uniquement des modèles confortables, élégants et adaptés à toutes les occasions :  
+        sorties, soirées, été, plage et quotidien.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>📩 Contact</h2>
+    
+    <div class="contact-box">
+        <form>
+            <label>Nom :</label>
+            <input type="text" placeholder="Votre nom">
+
+            <label>Email :</label>
+            <input type="email" placeholder="Votre email">
+
+            <label>Message :</label>
+            <textarea rows="5" placeholder="Votre message"></textarea>
+
+            <button class="btn-send">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 Le Pied de Madame – Tous droits réservés.
+</footer>
+
+</body>
+</html>
